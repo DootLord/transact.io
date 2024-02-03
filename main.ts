@@ -9,7 +9,7 @@ app.use('/', MainRouter);
 
 app.use(express.static('public'));
 
-startStockUpdater(1000);
+const stockUpdater = startStockUpdater(1000);
 
 app.listen(PORT, () => {
     console.log(`Server listening on ${PORT}`);

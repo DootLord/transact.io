@@ -1,6 +1,6 @@
 import { MongoClient, Db } from "mongodb";
-import { Table } from "./enums";
-const connectionString = "mongodb://172.17.0.4:27017";
+import { Table } from "../enum/enums";
+const connectionString = "mongodb://172.17.0.2:27017"; //TODO Need to make this dynamic
 
 
 /**

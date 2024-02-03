@@ -1,5 +1,5 @@
 /**
-* This file handles the db object 
+* This file handles the db object and exports it as a singleton
 */
 import db from './db';
 

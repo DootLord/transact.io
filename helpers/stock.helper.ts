@@ -13,11 +13,13 @@ async function getStocks() {
  * Creats a interval to update stock values. Should only be called once
  * @param updateInterval Interval in ms
  */
-export async function startStockUpdater(updateInterval: number) {
-    setInterval(async () => {
-        await updateStocks();
-        await getStocks();
-    }, updateInterval);
+export async function startStockUpdater(updateInterval: number, debug: boolean = false): Promise<NodeJS.Timeout> {
+    return setInterval((debug) => {
+        updateStocks();
+        if (debug) {
+            getStocks();
+        }
+    }, updateInterval, debug);
 }
 
 /**

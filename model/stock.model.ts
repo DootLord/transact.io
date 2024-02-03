@@ -1,6 +1,6 @@
 import { FindCursor, WithId, Document, ObjectId } from "mongodb";
-import dbInstance from "../dbHandler";
-import { Table } from "../enums";
+import dbInstance from "../db/dbHandler";
+import { Table } from "../enum/enums";
 
 export class StockModel {
     static getAllStocks(): FindCursor<WithId<Document>> {
