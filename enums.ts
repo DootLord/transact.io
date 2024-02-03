@@ -1,0 +1,32 @@
+export enum Table {
+    USER = 'user',
+    STOCK = 'stock',
+}
+
+export enum Stock {
+    TESLA = 'TSLA',
+    APPLE = 'AAPL',
+    MICROSOFT = 'MSFT',
+    AMAZON = 'AMZN',
+    FACEBOOK = 'FB',
+    GOOGLE = 'GOOG',
+    NETFLIX = 'NFLX',
+    TENCENT = 'TCEHY',
+    ALIBABA = 'BABA',
+    TSMC = 'TSM',
+    NVIDIA = 'NVDA',
+    INTEL = 'INTC',
+    ADOBE = 'ADBE',
+    PAYPAL = 'PYPL',
+    QUALCOMM = 'QCOM',
+    CISCO = 'CSCO',
+    BROADCOM = 'AVGO',
+    TEXAS_INSTRUMENTS = 'TXN',
+    SPOTIFY = 'SPOT',
+    AMD = 'AMD',
+    ORACLE = 'ORCL',
+    SAP = 'SAP',
+    IBM = 'IBM',
+    TWITTER = 'TWTR',
+    SALESFORCE = 'CRM',
+}
